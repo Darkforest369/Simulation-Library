@@ -95,11 +95,12 @@ body {
 }
 
 .card-illustration img {
-  width: 15%;
+  width: 100%;
+  max-width: 96px;
   height: auto;
   display: block;
   border-radius: 14px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-copy {
