@@ -1,0 +1,181 @@
+:root {
+  color-scheme: dark;
+  --bg: #111;
+  --surface: rgba(20,20,20,0.94);
+  --surface-strong: #1c1c1c;
+  --border: #333;
+  --text: #f4f7ff;
+  --muted: #9aa3b3;
+  --accent: #00e5ff;
+  --accent-soft: #0f4e66;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at top, rgba(0, 229, 255, 0.08), transparent 35%),
+              linear-gradient(180deg, #090909 0%, #111 100%);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  padding: 24px;
+}
+
+.gallery-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.gallery-header {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.gallery-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.intro {
+  margin: 0;
+  max-width: 680px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.simulation-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.simulation-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px;
+  max-width: 460px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+  display: grid;
+  gap: 22px;
+}
+
+.card-illustration {
+  width: 100%;
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(0,229,255,0.08), rgba(255,255,255,0.02));
+  border: 1px solid rgba(0,229,255,0.12);
+}
+
+.card-illustration svg {
+  width: min(100%, 180px);
+  height: auto;
+}
+
+.card-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.select-control {
+  display: grid;
+  gap: 10px;
+}
+
+.select-control label {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.select-control select {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(12, 12, 12, 0.96);
+  color: var(--text);
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 0.96rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.select-control select:focus {
+  border-color: rgba(0,229,255,0.72);
+  box-shadow: 0 0 0 4px rgba(0,229,255,0.08);
+}
+
+.sim-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.simulation-card h2 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.simulation-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.sim-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00e5ff, #5fd1ff);
+  color: #08131c;
+  box-shadow: 0 18px 30px rgba(0,229,255,0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.sim-button:hover,
+.sim-button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 36px rgba(0,229,255,0.28);
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 16px;
+  }
+
+  .simulation-card {
+    padding: 22px;
+  }
+}

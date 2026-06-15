@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="gallery-shell">
+    <header class="gallery-header">
+      <p class="eyebrow">Simulation Gallery</p>
+      <h1>Explore the physics experiments</h1>
+      <p class="intro">Select a simulation below and jump directly to the experience.</p>
+    </header>
+
+    <section class="simulation-grid">
+      <article class="simulation-card">
+        <div class="card-illustration" aria-hidden="true">
+          <svg viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bobGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#00e5ff" />
+                <stop offset="100%" stop-color="#43c7ff" />
+              </linearGradient>
+            </defs>
+            <rect x="10" y="12" width="100" height="12" rx="6" fill="#222" />
+            <line x1="60" y1="24" x2="60" y2="90" stroke="#7af3ff" stroke-width="3" stroke-linecap="round" />
+            <circle cx="60" cy="108" r="22" fill="url(#bobGradient)" />
+            <circle cx="60" cy="108" r="9" fill="#111" />
+            <path d="M22 40 C35 8, 85 8, 98 40" stroke="#00e5ff" stroke-width="2" fill="none" opacity="0.55" />
+            <circle cx="60" cy="108" r="36" fill="none" stroke="#00e5ff" stroke-width="1" opacity="0.18" />
+          </svg>
+        </div>
+
+        <div class="card-copy">
+          <span class="sim-type">Pendulum</span>
+          <h2>Chaotic Motion</h2>
+          <p>Visit the live pendulum simulation and explore speed, friction, audio, and butterfly mode in a sleek dark interface.</p>
+
+          <div class="select-control">
+            <label for="simulationSelect">Choose simulation</label>
+            <select id="simulationSelect">
+              <option value="https://Darkforest369.github.io/Pendulum-Simulation">Pendulum Simulation</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="sim-button" id="openSimulationBtn">
+          Open Pendulum Simulation
+        </button>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
