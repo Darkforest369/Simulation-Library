@@ -63,39 +63,40 @@ body {
 
 .simulation-grid {
   display: grid;
-  gap: 24px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .simulation-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 28px;
-  max-width: 460px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+  border-radius: 22px;
+  padding: 18px;
+  max-width: 260px;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.18);
   display: grid;
-  gap: 22px;
+  gap: 16px;
 }
 
 .card-illustration {
   width: 100%;
-  min-height: 200px;
+  min-height: 160px;
   display: grid;
   place-items: center;
-  padding: 18px;
-  border-radius: 20px;
+  padding: 14px;
+  border-radius: 18px;
   background: linear-gradient(180deg, rgba(0,229,255,0.08), rgba(255,255,255,0.02));
   border: 1px solid rgba(0,229,255,0.12);
 }
 
 .card-illustration svg {
-  width: min(100%, 180px);
+  width: min(100%, 140px);
   height: auto;
 }
 
 .card-copy {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .select-control {

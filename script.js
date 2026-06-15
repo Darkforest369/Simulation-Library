@@ -1,17 +1,7 @@
-const simulationSelect = document.getElementById('simulationSelect');
 const openSimulationBtn = document.getElementById('openSimulationBtn');
 
-if (simulationSelect && openSimulationBtn) {
+if (openSimulationBtn) {
   openSimulationBtn.addEventListener('click', () => {
-    const url = simulationSelect.value;
-    if (!url) {
-      return;
-    }
-    window.open(url, '_blank', 'noopener');
-  });
-
-  simulationSelect.addEventListener('change', () => {
-    const label = simulationSelect.options[simulationSelect.selectedIndex]?.text || 'Simulation';
-    openSimulationBtn.textContent = `Open ${label}`;
+    window.open('https://Darkforest369.github.io/Pendulum-Simulation', '_blank', 'noopener');
   });
 }
