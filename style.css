@@ -95,8 +95,9 @@ body {
 }
 
 .card-illustration img {
-  width: 100%;
-  max-width: 96px;
+  width: auto;
+  max-width: 78px;
+  max-height: 96px;
   height: auto;
   display: block;
   border-radius: 14px;
