@@ -72,7 +72,6 @@ body {
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 16px;
-  max-width: 220px;
   box-shadow: 0 14px 24px rgba(0,0,0,0.18);
   display: grid;
   gap: 14px;
