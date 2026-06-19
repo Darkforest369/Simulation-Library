@@ -64,7 +64,7 @@ body {
 .simulation-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 .simulation-card {
